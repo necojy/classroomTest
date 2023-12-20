@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理員介面</title>
+    <link rel="stylesheet" href="../Assets/CSS/Admin interface.css">
+    <script src="../Assets/JS/Admin_interface.js"></script>
+</head>
+
+<body>
+    <nav>
+        <!-- 左上半部欄位  -->
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../image/usericon.png" alt="">
+            </div>
+
+            <span class="logo_name">系統管理員</span>
+
+        </div>
+
+        <!-- 左下半部欄位 -->
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><button class="menu-borrowRequest">
+                        <i><img src="../image/request40.png" alt=""></i>
+                        <span class="link-name">借用請求</span>
+                    </button></li>
+                <li><button class="menu-keyRecord">
+                        <i><img src="../image/keyrecord40.png" alt=""></i>
+                        <span class="link-name">鑰匙借用紀錄</span>
+                    </button></li>
+                <li><button class="menu-classSchedule">
+                        <i><img src="../image/keyrecord40.png" alt=""></i>
+                        <span class="link-name">課表排程</span>
+                    </button></li>
+                <li><button class="menu-classroomInquiry">
+                        <i><img src="../image/keyrecord40.png" alt=""></i>
+                        <span class="link-name">教室查詢</span>
+                    </button></li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li class="logout">
+                    <button id="logoutBtn">
+                        <i><img src="../image/logoutIcon.png" alt=""></i>
+                        <span class="link-name">登出</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="board">
+        <!-- 右上半部欄位  -->
+        <div class="top">
+            <i class="sidebar-toggle"><img src="../image/left.png" class="leftArrow" id="leftArrow"></i>
+            <a href="Home.html"><img src="../image/home.png" alt=""></a>
+
+        </div>
+
+        <!-- 右下半部欄位  -->
+        <div class="board-content">
+            <!-- 借用請求 -->
+            <div class="borrowRequest" id="borrowRequest">
+
+                <!-- 兩個按鈕選擇顯示立即還是預約 -->
+                <div class="conditions">
+                    <button class="immediately" id="immediately">立即借用</button>
+                    <button class="reserve" id="reserve">預約借用</button>
+                </div>
+
+
+                <div class="immediatelyForm">
+                    <div class="content">
+                        <div class="title">
+                            <p>XXX教室 <img src="../image/dropdownIcon48.png" id="immediatelyFormImg1"
+                                    alt="immediatelyFormImg2"></p>
+                        </div>
+                        <div class="text" id="immediatelyFormContent1">
+                            <p>艾利</p>
+                            <p>借用目的 : 研究項目討論</p>
+                            <div class="accounting">
+                                <p>Start Time : </p>
+                                <p>End Time : </p>
+                                <p>2023/10/20 10.am</p>
+                                <p>2023/10/20 11.am</p>
+                                <button>拒絕</button>
+                                <button>同意</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="title">
+                            <p>XXX教室 <img src="../image/dropdownIcon48.png" id="immediatelyFormImg2"
+                                    alt="immediatelyFormImg2"></p>
+                        </div>
+                        <div class="text" id="immediatelyFormContent2">
+                            <p>艾利</p>
+                            <p>借用目的 : 研究項目討論</p>
+                            <div class="accounting">
+                                <p>Start Time : </p>
+                                <p>End Time : </p>
+                                <p>2023/10/20 10.am</p>
+                                <p>2023/10/20 11.am</p>
+                                <button>拒絕</button>
+                                <button>同意</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="reserveForm">
+                    <div class="content">
+                        <div class="title">
+                            <p>YYY教室<img src="../image/dropdownIcon48.png" id="reserveFormImg1" alt="reserveFormImg1">
+                            </p>
+                        </div>
+                        <div class="text" id="reserveFormContent1">
+                            <p>艾利</p>
+                            <p>借用目的 : 研究項目討論</p>
+                            <div class="accounting">
+                                <p>Start Time : </p>
+                                <p>End Time : </p>
+                                <p>2023/10/20 10.am</p>
+                                <p>2023/10/20 11.am</p>
+                                <button>拒絕</button>
+                                <button class="acceptButton">同意</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <p>YYY教室<img src="../image/dropdownIcon48.png" id="reserveFormImg2" alt="reserveFormImg2">
+                            </p>
+                        </div>
+                        <div class="text" id="reserveFormContent2">
+                            <p>艾利</p>
+                            <p>借用目的 : 研究項目討論</p>
+                            <div class="accounting">
+                                <p>Start Time : </p>
+                                <p>End Time : </p>
+                                <p>2023/10/20 10.am</p>
+                                <p>2023/10/20 11.am</p>
+                                <button>拒絕</button>
+                                <button class="acceptButton">同意</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <p>YYY教室<img src="../image/dropdownIcon48.png" id="reserveFormImg3" alt="reserveFormImg3">
+                            </p>
+                        </div>
+                        <div class="text" id="reserveFormContent3">
+                            <p>艾利</p>
+                            <p>借用目的 : 研究項目討論</p>
+                            <div class="accounting">
+                                <p>Start Time : </p>
+                                <p>End Time : </p>
+                                <p>2023/10/20 10.am</p>
+                                <p>2023/10/20 11.am</p>
+                                <button>拒絕</button>
+                                <button class="acceptButton">同意</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 鑰匙借用紀錄 -->
+            <div class="keyRecord" id="keyRecord">
+                <div class="keyRecordTitle">
+                    <span>借用者</span>
+                    <span>借用時間</span>
+                    <span>預計歸還時間</span>
+                    <span>借用狀態</span>
+
+                </div>
+
+                <div class="keyRecordContent">
+                    <span>艾利</span>
+                    <span>4.PM</span>
+                    <span>5.PM</span>
+
+                    <!-- 雙重按鈕確認歸還 -->
+                    <button id="returnButton" onclick="keyDoubleCheck()">未歸還</button>
+
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeModal">&times;</span>
+                            <p>已確認使用者歸還嗎？</p>
+                            <button id="confirmBtn">確認</button>
+                            <button id="cancelBtn">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 課表排程 -->
+            <div class="classSchedule" id="classSchedule">
+
+                <!-- 兩個按鈕選擇顯示快速新增還是課表新增 -->
+                <div class="classScheduleConditions">
+                    <button class="fastAdd" id="fastAdd">快速新增</button>
+                    <button class="classAdd" id="classAdd">課表新增</button>
+                </div>
+
+                <!-- 快速新增 -->
+                <form class="fastAddForm">
+                    <div class="classScheduleTitle">
+                        <h1>單一新增</h1>
+                        <div>借用人學號: </div>
+                        <input type="text" name="userAccount" required>
+                        <div>課程名稱: </div>
+                        <input type="text" name="activity" required>
+
+                        <div>使用教室: </div>
+                        <div class="fastSelectRoom">
+                            <input class="fastDropdownBox" type="text" id="fastRoomBox" name="room" readonly>
+                            <div class="fastDropdown" id="fastDropdownRoom">
+                                <ul id="fastRoomSelect"></ul>
+                            </div>
+                        </div>
+                        <div>選擇節次:</div>
+                        <div class="fastSelectLesson">
+                            <input class="fastDropdownBox" type="text" id="fastLessonBoxStart" value="第一節" name="start"
+                                readonly>
+                            <div class="fastDropdown" id="fastDropdownLessonStart">
+                                <ul id="fastLessonSelectStart">
+                                    <li>第一節</li>
+                                    <li>第二節</li>
+                                    <li>第三節</li>
+                                    <li>第四節</li>
+                                    <li>第五節</li>
+                                    <li>第六節</li>
+                                    <li>第七節</li>
+                                    <li>第八節</li>
+                                    <li>第九節</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span
+                            style="transform: rotate(90deg) translateX(-50%); font-size: 24px; margin-inline: auto">~</span>
+                        <div class="fastSelectLesson">
+                            <input class="fastDropdownBox" type="text" id="fastLessonBoxEnd" value="第一節" name="end"
+                                readonly>
+                            <div class="fastDropdown" id="fastDropdownLessonEnd">
+                                <ul id="fastLessonSelectEnd">
+                                    <li>第一節</li>
+                                    <li>第二節</li>
+                                    <li>第三節</li>
+                                    <li>第四節</li>
+                                    <li>第五節</li>
+                                    <li>第六節</li>
+                                    <li>第七節</li>
+                                    <li>第八節</li>
+                                    <li>第九節</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>選擇日期: </div>
+                        <input type="date" id="datePicker" name="date" required>
+                        <button type="submit" id="fastSubmit">提交</button>
+                    </div>
+                </form>
+                
+                <!-- 課表新增 -->
+                <form class="classAddForm">
+                    <h1>學期新增</h1>
+                    <div class="classScheduleBody">
+                        <div class="classSchedulePage">
+                            <div>選擇學期: </div>
+                            <input type="date" id="semesterSelectStart" name="semesterStart" required>
+                            <span
+                                style="transform: rotate(90deg) translateX(-50%); font-size: 35px; margin-inline: auto;">~</span>
+                            <input type="date" id="semesterSelectEnd" name="semesterEnd" required>
+                            <div>選擇星期: </div>
+                            <div class="classSelectWeek">
+                                <input class="classDropdownBox" type="text" id="classWeekBox" value="星期一" name="week"
+                                    readonly>
+                                <div class="classDropdown" id="classDropdownWeek">
+                                    <ul id="classWeekSelect">
+                                        <li>星期一</li>
+                                        <li>星期二</li>
+                                        <li>星期三</li>
+                                        <li>星期四</li>
+                                        <li>星期五</li>
+                                        <li>星期六</li>
+                                        <li>星期日</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="classScheduleTitle">
+                            <div>借用人學號: </div>
+                            <input type="text" name="userAccount" required>
+                            <div>課程名稱: </div>
+                            <input type="text" name="activity" required>
+                            <div>使用教室: </div>
+                            <div class="classSelectRoom">
+                                <input class="classDropdownBox" type="text" id="classRoomBox" name="room" readonly>
+                                <div class="classDropdown" id="classDropdownRoom">
+                                    <ul id="classRoomSelect"></ul>
+                                </div>
+                            </div>
+                            <div>選擇節次:</div>
+                            <div class="classSelectLesson">
+                                <input class="classDropdownBox" type="text" id="classLessonBoxStart" value="第一節"
+                                    name="start" readonly>
+                                <div class="classDropdown" id="classDropdownLessonStart">
+                                    <ul id="classLessonSelectStart">
+                                        <li>第一節</li>
+                                        <li>第二節</li>
+                                        <li>第三節</li>
+                                        <li>第四節</li>
+                                        <li>第五節</li>
+                                        <li>第六節</li>
+                                        <li>第七節</li>
+                                        <li>第八節</li>
+                                        <li>第九節</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span
+                                style="transform: rotate(90deg) translateX(-50%); font-size: 24px; margin-inline: auto">~</span>
+                            <div class="classSelectLesson">
+                                <input class="classDropdownBox" type="text" id="classLessonBoxEnd" value="第一節"
+                                    name="end" readonly>
+                                <div class="classDropdown" id="classDropdownLessonEnd">
+                                    <ul id="classLessonSelectEnd">
+                                        <li>第一節</li>
+                                        <li>第二節</li>
+                                        <li>第三節</li>
+                                        <li>第四節</li>
+                                        <li>第五節</li>
+                                        <li>第六節</li>
+                                        <li>第七節</li>
+                                        <li>第八節</li>
+                                        <li>第九節</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="submit" id="classSubmit">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- 教室查詢 -->
+            <div class="classroomInquiry" id="classroomInquiry">
+                <div class="classroomInquiryTitle">
+                    <h1>找教室</h1>
+
+                </div>
+
+                <div class="classroomInquiryContent">
+                    <span>教室名稱: <input class="inputClassRoomName" type="text" placeholder="輸入教室名稱"
+                            list="classroomNameList"></span>
+                    <datalist id="classroomNameList"></datalist>
+
+                    <button>提交</button>
+
+                    <span>選擇日期: <input type="date" id="datePicker" name="datePicker"></span>
+                    <button>提交</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
